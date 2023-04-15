@@ -62,7 +62,7 @@
   margin-bottom: 8px;
   color: #131313;
   font-size: 24px;
-  line-height: 34px;
+  line-height: 34px; 
   font-weight: 700;
 }
 
@@ -75,7 +75,23 @@
 
 .card .card-item .card-body .card-detail {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+.card .card-item .card-body .card-detail span {
+  width: 40%;
+  display: flex;
+}
+
+.card .card-item .card-body .card-detail span p {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+
+.card .card-item .card-body .card-detail span svg {
+  padding: 10px;
 }
 
 @media screen and (max-width: 1200px) {

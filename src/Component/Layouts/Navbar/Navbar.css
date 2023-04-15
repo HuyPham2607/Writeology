@@ -1,6 +1,11 @@
 nav {
   margin: 0 auto;
   padding: 48px 0;
+  border-bottom: 1px solid #f0f0f0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(240, 240, 240);
+  background-color: #fff;
 }
 
 .nav-header {

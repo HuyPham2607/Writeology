@@ -6,7 +6,7 @@ import SideBarCarBlog from "../../SideBarCardBlog/SideBarCarBlog";
 const MainPost = () => {
   const props = {
     img: HowToChose,
-    h5: "TIPSsss",
+    h5: "TIPS",
     h3: "How to choose the best management software",
     p: "Viverra tristique gravida dolor vel aenean egestas libero enim consequat arcu augue euismod est.",
   };
