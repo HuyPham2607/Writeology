@@ -1,0 +1,90 @@
+section {
+  padding: 100px 0;
+}
+
+.content-thumbnail {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  min-height: 526px;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+.content-thumbnail:hover {
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 0px, 0px) scale3d(0.98, 0.98, 0.98) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg);
+}
+
+.content-thumbnail img {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all 1s;
+}
+
+.content-thumbnail img:hover {
+  transform-style: preserve-3d;
+  transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1.1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg);
+}
+
+.content-thumbnail span {
+  padding: 50px;
+}
+
+.content-thumbnail span button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #000;
+  outline: none;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.content-thumbnail span h3 {
+  color: #fff;
+}
+
+.content-inner .row {
+  position: relative;
+  padding: 25px 20px;
+}
+
+.content-inner span {
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.content-inner .row::after {
+  content: "";
+  height: 0.5px;
+  width: 90%;
+  bottom: 0;
+  position: absolute;
+  background-color: #0000004f;
+}
+
+.content-inner .row + .row + .row::after {
+  display: none;
+}
+
+.content-inner span:hover {
+  transform: translateX(20px);
+}

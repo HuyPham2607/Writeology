@@ -1,0 +1,33 @@
+.popular {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.popular span {
+  height: 150px;
+  width: 150px;
+  max-height: 150px;
+  max-width: 150px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.popular span img {
+  display: inline-block;
+  max-width: 100%;
+}
