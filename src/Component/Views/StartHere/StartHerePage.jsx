@@ -8,7 +8,7 @@ import "./StartHerePage.css";
 const StartHere = () => {
   let navigate = useNavigate();
   const routeChangeHome = () => {
-    let path = `/`;
+    let path = `/Writeology`;
     window.scrollTo(0, 0);
     navigate(path);
   };
