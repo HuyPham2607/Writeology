@@ -1,8 +1,39 @@
 import React from "react";
-import "./SideBarCarBlog.css";
+import { useNavigate } from "react-router-dom";
 import imgResources from "../../Img/resources.jpg";
 import Popular from "../Popular/Popular";
+import "./SideBarCarBlog.css";
+
 const SideBarCarBlog = () => {
+  let navigate = useNavigate();
+  function addDashToSpaces(text) {
+    return text.replace(/\s+/g, "-");
+  }
+  const routeChangeBlogid = (id) => {
+    let path = `/blog/${addDashToSpaces(id)}`;
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
+
+  const routeChangePageID = (id) => {
+    let path = `/${id}`;
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
+  const array = [
+    {
+      img: "https://assets.website-files.com/62abc23e594f83d9d66b136f/62abe3a09177383d10eae70a_collaboration-software-thumbnail-blog-writelogy-x-webflow-template--p-500.jpeg",
+      h3: "10 Best collaboration software for your team",
+    },
+    {
+      img: "https://assets.website-files.com/62abc23e594f83d9d66b136f/62abe33779b3d5971674d153_project-management-thumbnail-blog-writelogy-x-webflow-template--p-500.jpeg",
+      h3: "A complete guide to learn project management",
+    },
+    {
+      img: "https://assets.website-files.com/62abc23e594f83d9d66b136f/62abe1c991773849cceae17c_time-tracking-thumbnail-blog-writelogy-x-webflow-template--p-500.jpeg",
+      h3: "How time tracking can improve team management",
+    },
+  ];
   return (
     <div className="sidebar">
       <div className="header-sidebar">
@@ -20,11 +51,20 @@ const SideBarCarBlog = () => {
       </div>
       <div className="line-under"></div>
       <div className="categories-wrapper-sidebar">
-        <button>TIPS</button>
-        <button>RESOURCES</button>
-        <button>GUIDES</button>
+        <button onClick={() => routeChangePageID("tips")}>TIPS</button>
+        <button onClick={() => routeChangePageID("resources")}>
+          RESOURCES
+        </button>
+        <button onClick={() => routeChangePageID("guides")}>GUIDES</button>
       </div>
-      <div className="sidebar-resources">
+      <div
+        className="sidebar-resources"
+        onClick={() =>
+          routeChangeBlogid(
+            "How to choose the best management software resources"
+          )
+        }
+      >
         <div className="bg-overlay-gradient">
           <img src={imgResources} alt="" />
         </div>
@@ -35,9 +75,9 @@ const SideBarCarBlog = () => {
       </div>
       <div className="wrapper-popular">
         <h3>Popular articles</h3>
-        <Popular />
-        <Popular />
-        <Popular />
+        {array.map((e, i) => (
+          <Popular props={e} key={i} />
+        ))}
       </div>
     </div>
   );

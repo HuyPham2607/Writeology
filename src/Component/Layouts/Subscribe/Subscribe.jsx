@@ -1,6 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./Subscribe.css";
 const Subscribe = () => {
+  let navigate = useNavigate();
+  const routeChangePagId = (id) => {
+    let path = `/${id}`;
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
   return (
     <div className="wrapper-subscribe">
       <div className="subscribe">
@@ -51,7 +59,9 @@ const Subscribe = () => {
           </span>
         </div>
         <div className="bg-overlay-subscribe">
-          <button>Unlock content</button>
+          <button onClick={() => routeChangePagId("subscribe")}>
+            Unlock content
+          </button>
         </div>
       </div>
     </div>

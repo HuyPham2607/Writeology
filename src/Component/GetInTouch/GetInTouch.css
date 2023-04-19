@@ -1,0 +1,187 @@
+.get-in-touch {
+  display: grid;
+  -webkit-box-align: start;
+  -webkit-align-items: start;
+  -ms-flex-align: start;
+  align-items: start;
+  grid-column-gap: 120px;
+  grid-row-gap: 100px;
+  -ms-grid-columns: 0.7fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
+}
+
+.get-in-touch .contact-us h1 {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: #131313;
+  font-size: 54px;
+  line-height: 66px;
+  font-weight: 700;
+}
+
+.get-in-touch .contact-us p {
+  margin-bottom: 32px;
+  color: #727272;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.get-in-touch .contact-us .via {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #131313;
+  padding-bottom: 16px;
+}
+
+.get-in-touch .contact-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.get-in-touch .contact-us ul li {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.get-in-touch .contact-us ul li svg {
+  padding-right: 10px;
+}
+
+.get-in-touch .form-contact {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.06);
+  min-height: 580px;
+  margin-bottom: 0px;
+  padding: 48px;
+  border-radius: 12px;
+}
+
+.get-in-touch .form-contact form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  grid-auto-columns: 1fr 1fr;
+  grid-column-gap: 28px;
+  grid-row-gap: 28px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.get-in-touch .form-contact form label {
+  display: block;
+  margin-bottom: 12px;
+  color: #131313;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.get-in-touch .form-contact form input {
+  min-height: 54px;
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 16px 18px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06);
+  -webkit-transition: box-shadow 300ms ease, color 300ms ease,
+    border-color 300ms ease;
+  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.get-in-touch .form-contact form input:hover {
+  border-color: #131313;
+}
+.get-in-touch .form-contact form .text-area {
+  grid-column-start: span 2;
+}
+
+.get-in-touch .form-contact form textarea {
+  min-height: 140px;
+  padding: 16px 18px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06);
+  -webkit-transition: box-shadow 300ms ease, color 300ms ease,
+    border-color 300ms ease;
+  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
+  font-size: 16px;
+  line-height: 28px;
+}
+.w-input {
+  width: 100%;
+}
+
+.get-in-touch .form-contact form button {
+  padding: 18px 28px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #131313;
+  -webkit-transition: background-color 300ms ease, color 300ms ease,
+    -webkit-transform 300ms ease;
+  transition: background-color 300ms ease, color 300ms ease,
+    -webkit-transform 300ms ease;
+  transition: background-color 300ms ease, transform 300ms ease,
+    color 300ms ease;
+  transition: background-color 300ms ease, transform 300ms ease,
+    color 300ms ease, -webkit-transform 300ms ease;
+  color: #fff;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 1000px) {
+  .get-in-touch {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-mobile {
+    padding: 50px 10px;
+  }
+  .get-in-touch .form-contact {
+    padding: 22px;
+  }
+  .get-in-touch .form-contact form {
+    display: block;
+  }
+  .get-in-touch .form-contact form div {
+    padding: 10px 0;
+  }
+
+  .get-in-touch .form-contact form button {
+    width: 100%;
+  }
+  .get-in-touch .form-contact form textarea {
+    min-height: 100px;
+  }
+}

@@ -1,0 +1,224 @@
+.wrapper-guides {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100vh;
+  box-shadow: 1px 0 14px 0 rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.sidebar-guides {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: scroll;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.wrapper-guides .logo-header {
+  width: 100%;
+  padding: 38px 22px;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fcfcfc;
+  color: #727272;
+  text-align: center;
+  text-decoration: none;
+}
+
+.wrapper-guides .logo-header:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in;
+}
+
+.sidebar-guides ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-guides .basic {
+  cursor: pointer;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000;
+  border-top: 1px solid #13131338;
+  border-bottom: 1px solid #13131316;
+}
+
+.sidebar-guides .basic span {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-guides .basic span .icon-open {
+  transition: 0.3s;
+  transform: rotateZ(90deg);
+}
+
+.sidebar-guides .basic span .icon-close {
+  transition: 0.3s;
+  transform: rotateZ(0deg);
+}
+
+.sidebar-guides .dropdown {
+  cursor: pointer;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.sidebar-guides .dropdown.open {
+  transition: all 0.3s;
+  max-height: 1000px;
+}
+
+.sidebar-guides .dropdown.open li:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-guides .dropdown {
+  max-width: 1000px;
+  padding: 0;
+  justify-items: start;
+  grid-column-gap: 0px;
+}
+
+.sidebar-guides .dropdown li {
+  padding: 20px 20px;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-guides .dropdown .img {
+  max-width: 46px;
+  margin-right: 14px;
+  border-radius: 12px;
+  background-color: #131313;
+}
+
+.sidebar-guides .dropdown img {
+  width: 100%;
+}
+
+/*  */
+
+.sidebar-guides .cpm {
+  cursor: pointer;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #000;
+  border-top: 1px solid #13131338;
+  border-bottom: 1px solid #13131316;
+}
+
+.sidebar-guides .cpm span {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-guides .cpm span .icon-open {
+  transition: 0.3s;
+  transform: rotateZ(90deg);
+}
+
+.sidebar-guides .cpm span .icon-close {
+  transition: 0.3s;
+  transform: rotateZ(0deg);
+}
+
+.sidebar-guides .dropdown {
+  cursor: pointer;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.sidebar-guides .dropdown.open {
+  transition: all 0.3s;
+  max-height: 1000px;
+}
+
+.sidebar-guides .dropdown.open li:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar-guides .dropdown {
+  max-width: 1000px;
+  padding: 0;
+  justify-items: start;
+  grid-column-gap: 0px;
+}
+
+.sidebar-guides .dropdown li {
+  padding: 20px 20px;
+  font-size: 20px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-guides .dropdown .img {
+  max-width: 46px;
+  margin-right: 14px;
+  border-radius: 12px;
+  background-color: #131313;
+}
+
+.sidebar-guides .dropdown img {
+  width: 100%;
+}
+.wrapper-guides .btn-bottom {
+  margin-top: 20px;
+  margin-bottom: 24px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.wrapper-guides button {
+  width: 100%;
+  padding: 18px 28px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #131313;
+  color: #fff;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}

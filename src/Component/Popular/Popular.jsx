@@ -1,16 +1,25 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./Popular.css";
 
-const Popular = () => {
+const Popular = ({ props }) => {
+  let navigate = useNavigate();
+  function addDashToSpaces(text) {
+    return text.replace(/\s+/g, "-");
+  }
+  const routeChangeBlogid = (id) => {
+    let path = `/blog/${addDashToSpaces(id)}`;
+    window.scrollTo(0, 0);
+    navigate(path);
+  };
+
   return (
-    <div className="popular">
+    <div className="popular" onClick={() => routeChangeBlogid(props.h3)}>
       <span>
-        <img
-          src="https://assets.website-files.com/62abc23e594f83d9d66b136f/62abe3a09177383d10eae70a_collaboration-software-thumbnail-blog-writelogy-x-webflow-template--p-500.jpeg"
-          alt=""
-        />
+        <img src={props.img} alt="" />
       </span>
-      <h4>10 Best collaboration software for your team</h4>
+      <h4>{props.h3}</h4>
     </div>
   );
 };
