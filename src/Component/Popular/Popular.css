@@ -31,3 +31,9 @@
   display: inline-block;
   max-width: 100%;
 }
+
+@media screen and (max-width: 1200px) {
+  .popular {
+    grid-template-columns: auto 1fr;
+  }
+}

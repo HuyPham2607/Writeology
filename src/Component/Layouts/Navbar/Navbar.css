@@ -16,6 +16,8 @@ nav {
   justify-content: space-between;
 }
 .nav-header span {
+  cursor: pointer;
+
   display: flex;
   align-items: center;
 }
@@ -51,6 +53,11 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.nav-header .logo-header img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 
 .nav-header .btn-options {
@@ -132,6 +139,7 @@ nav {
 }
 
 .router-header ul {
+  cursor: pointer;
   z-index: 3;
   padding: 10px;
   display: flex;
@@ -240,10 +248,43 @@ nav {
   color: #727272;
   line-height: 20px;
 }
+.modal-backdrop {
+  display: none;
+}
 
+.modal-title {
+  color: #131313;
+  font-size: 34px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+.modal-body input {
+  width: 100%;
+  min-height: 54px;
+  margin-bottom: 0px;
+  padding: 16px 18px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.06);
+  -webkit-transition: box-shadow 300ms ease, color 300ms ease,
+    border-color 300ms ease;
+  transition: box-shadow 300ms ease, color 300ms ease, border-color 300ms ease;
+  font-size: 16px;
+  line-height: 18px;
+}
 @media screen and (max-width: 1000px) {
   .nav {
     padding: 30px 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-header span ul .cart {
+    display: none;
   }
 }
 

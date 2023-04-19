@@ -1,0 +1,116 @@
+.content-overflow {
+  height: 100%;
+  display: grid;
+  grid-column-gap: 40px;
+  grid-template-columns: 0.35fr 1fr;
+}
+
+.content-overflow .navbar-overflow ul {
+  position: sticky;
+  top: 10px;
+  list-style: none;
+  padding: 21px 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.06);
+}
+
+.content-overflow .navbar-overflow ul li a.links {
+  display: flex;
+  text-decoration: none;
+  font-family: Manrope, sans-serif;
+  color: #727272;
+  font-size: 20px;
+  line-height: 28px;
+  padding: 10px 20px;
+  font-weight: 400;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.content-overflow .navbar-overflow ul .links:hover {
+  background-color: #131313;
+  color: #fff;
+}
+
+.content-overflow .content-start {
+  padding: 64px 56px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.06);
+}
+
+.content-overflow .content-start h2 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  color: #131313;
+  font-size: 42px;
+  line-height: 42px;
+  font-weight: 500;
+}
+.content-overflow .content-start h3 {
+  margin-top: 40px;
+  margin-bottom: 8px;
+  color: #131313;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 500;
+}
+
+.content-overflow .content-start p {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: #727272;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.content-overflow .content-start img {
+  border-radius: 16px;
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.content-overflow .content-start .under-line {
+  height: 1px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  background-color: #d5d5d5;
+}
+
+.content-overflow .content-start button {
+  margin-top: 20px;
+  padding: 18px 28px;
+  justify-content: center;
+  border-radius: 8px;
+  background-color: #131313;
+  color: #fff;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .content-overflow {
+    height: 100%;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content-overflow .content-start {
+    padding: 0;
+  }
+}

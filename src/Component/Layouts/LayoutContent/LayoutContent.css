@@ -20,6 +20,7 @@ section {
 }
 
 .content-thumbnail:hover {
+  cursor: pointer;
   transform-style: preserve-3d;
   transform: translate3d(0px, 0px, 0px) scale3d(0.98, 0.98, 0.98) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg);
@@ -86,5 +87,7 @@ section {
 }
 
 .content-inner span:hover {
+  cursor: pointer;
+
   transform: translateX(20px);
 }

@@ -1,15 +1,8 @@
 import React from "react";
-import HowToChose from "../../../Img/HowToChose.jpg";
 import "./MainPost.css";
 import CardBlog from "../../CardBlog/CardBlog";
 import SideBarCarBlog from "../../SideBarCardBlog/SideBarCarBlog";
-const MainPost = () => {
-  const props = {
-    img: HowToChose,
-    h5: "TIPS",
-    h3: "How to choose the best management software",
-    p: "Viverra tristique gravida dolor vel aenean egestas libero enim consequat arcu augue euismod est.",
-  };
+const MainPost = ({ props }) => {
   return (
     <section className="container-xl main-post">
       <div className="row">
@@ -17,10 +10,9 @@ const MainPost = () => {
           <div className="col">
             <h2>Lastest articles</h2>
             <div className="row cardblog">
-              <CardBlog props={props} />
-              <CardBlog props={props} />
-              <CardBlog props={props} />
-              <CardBlog props={props} />
+              {props.map((e, i) => (
+                <CardBlog props={e} key={i} />
+              ))}
             </div>
           </div>
         </div>
