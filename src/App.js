@@ -17,7 +17,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Writeology" element={<Home />} />
         <Route path="/home-premium" element={<HomePre />} />
         <Route path="/blog/:_id" element={<BlogPost />} />
         <Route path="/blog-premium" element={<BlogPre />} />
